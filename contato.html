@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>DevinHouse Farmácia</h1>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Todos os remédios</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Fale conosco</a></li>           
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="formulario-inicial">
+        <div>
+            <h1 id="fale-conosco">Formulário de contato</h1>
+        <br>
+        </div>
+        
+        <form >
+            <fieldset class="formulario">
+                <div class="campo">
+                    <label>Nome:</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label>Telefone para contato:</label>
+                    <input type="text" name="telefone" id="telefone" required>
+                </div>
+
+                <div class="campo">
+                    <label>E-mal:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                
+                <div class="campo" id="mensagens">
+                    <label for="assunto">Assunto</label>
+                    <select class="opcao" name="assunto" id="assunto-op">
+                        <optgroup label="Assuntos">
+                            <option value="Comercial">Comercial</option>
+                            <option value="Dúvidas">Dúvidas</option>
+                            <option value="Revenda">Revenda</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="dados" id="mensagem-cliente">
+                    <label for="mensagem">Mensagem:</label>
+                    <br>
+                    <textarea name="mensagem" id="campo-mensagem" cols="60" rows="16" placeholder="Escreva aqui sua mensagem" required></textarea>
+                    <div class="check"> <input type="checkbox" id="orcamento">
+                        <label for="orcamento">Esta mensagem é sobre um orçamento</label>
+                    </div>
+                    
+                    <input class="enviar-mensagem" type="submit" value="Enviar">
+                </div>
+            </fieldset class="formulario">
+
+
+        </form>
+    </main>
+</body>
+</html>
